@@ -1,0 +1,41 @@
+﻿<Window x:Class="PR_7._2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Calculator" Height="350" Width="525" Icon="images/images.icon.png" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF03F9F4"/>
+                <GradientStop Color="#FFC95EFD" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Image Source="images/Image2.png" Stretch="Fill"/>
+        <Menu HorizontalAlignment="Left" VerticalAlignment="Top" Width="525">
+            <Menu.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFC26EFF" Offset="1"/>
+                    <GradientStop Color="#FF13DDF7" Offset="0"/>
+                </LinearGradientBrush>
+            </Menu.Background>
+            <MenuItem Header="Input" Click="Input_Click"/>
+            <MenuItem Header="Calc" Click="Calc_Click"/>
+            <MenuItem Header="About" Click="About_Click"/>
+        </Menu>
+        <Label Content="Hello user!" Margin="192,156,162,113" RenderTransformOrigin="0.5,0.5" FontSize="24">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0EAEF1" Offset="1"/>
+                    <GradientStop Color="#FFB71AE8" Offset="0.41"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.227"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+    </Grid>
+</Window>

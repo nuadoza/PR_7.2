@@ -1,0 +1,27 @@
+﻿<Window x:Class="PR_7._2.InputWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Input" Height="350" Width="525" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="images/Без названия.png">
+    <Grid Height="333" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Image Grid.ColumnSpan="2" Grid.RowSpan="4" Source="images/istockphoto-1419844586-612x612.jpg" Stretch="Fill" Height="350" VerticalAlignment="Top"/>
+        <Label Content="Number 1:" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" Margin="5" Foreground="White"/>
+        <TextBox x:Name="Number1TextBox" Grid.Column="1" Grid.Row="0" Margin="5"/>
+        <Label Content="Number 2:" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" Margin="5" Foreground="White"/>
+        <TextBox x:Name="Number2TextBox" Grid.Column="1" Grid.Row="1" Margin="5"/>
+        <Label Content="Number 3:" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Right" Margin="5" Foreground="White"/>
+        <TextBox x:Name="Number3TextBox" Grid.Column="1" Grid.Row="2" Margin="5"/>
+        <CheckBox x:Name="SArithmCheckBox" Content="SArithm" Grid.Column="0" Grid.Row="3" Margin="5" Foreground="White"/>
+        <CheckBox x:Name="RangeCheckBox" Content="Range" Grid.Row="3" Margin="5,35,5,-25" Foreground="White"/>
+        <Button Content="Calculate" Grid.Column="1" Grid.Row="3" Margin="5,10,5,34" Click="Calculate_Click"/>
+    </Grid>
+</Window>
